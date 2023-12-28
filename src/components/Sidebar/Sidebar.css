@@ -1,0 +1,56 @@
+.sidebar__main {
+  display: flex;
+  background-color: #0d0d0f;
+  min-height: 100vh;
+  color: #fff;
+  padding: 15px;
+  gap: 0.4rem;
+  position: relative;
+}
+
+.sidebar__left__side {
+  width: 1%;
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+  /* border-right: 1px solid grey; */
+  /* background-color: red; */
+  position: relative;
+  /* justify-content: center; */
+  align-items: center;
+  /* margin-top: 40px; */
+  position: fixed;
+  top: 10;
+}
+
+.sidebar__right__side {
+  width: 100%;
+  margin-left: 30px;
+}
+
+.side_bar_logout_icon {
+  position: absolute;
+  top: 530px;
+  left: 0px;
+  cursor: pointer;
+}
+
+.side_bar_upload_cams_data_card > h2 {
+  margin: 0px;
+}
+
+::-webkit-scrollbar {
+  display: none;
+}
+
+.side__main__icon {
+  position: absolute;
+  top: 2%;
+  left: 2px;
+}
+
+@media (max-width: 768px) {
+  .sidebar__right__side {
+    margin-left: 2px;
+  }
+}

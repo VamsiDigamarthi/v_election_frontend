@@ -1,0 +1,125 @@
+.quiz__main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  width: 95%;
+  margin-left: 15px;
+}
+
+.quiz__main__card {
+  min-width: 40%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  box-shadow: #ff6f003b 0px 4px 12px;
+  padding: 20px;
+}
+
+.question-card {
+  /* Center the div  */
+  /* margin: 0 auto; */
+
+  /* Dimensions  */
+  width: 90%; /* Can be in percentage also. */
+  /* height: auto; */
+
+  /* Visual  */
+  /* background-color: gray; */
+  /* padding: 16px; */
+  border-radius: 16px;
+  color: white;
+  /* box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px,
+    rgba(0, 0, 0, 0.3) 0px 18px 36px -18px; */
+}
+
+.ul {
+  list-style: none;
+}
+
+.li {
+  margin-top: 8px;
+  /* background-color: darkgray; */
+  padding: 16px;
+  border: 2px solid white;
+  border-radius: 20px;
+  font-size: 20px;
+}
+
+.question-text {
+  color: #ff6f00;
+  font-size: 24px;
+}
+
+/* Final Results  */
+
+.final-results {
+  /* Center the div  */
+  /* margin: 0 auto; */
+
+  /* Dimensions  */
+  width: 100%; /* Can be in percentage also. */
+  /* height: auto; */
+  margin-top: 64px;
+
+  /* Visual  */
+  /* background-color: gray; */
+  /* padding: 16px; */
+  /* border-radius: 16px; */
+  color: white;
+  /* box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px,
+    rgba(0, 0, 0, 0.3) 0px 18px 36px -18px; */
+}
+
+.button {
+  background-color: red; /* Green */
+  border: none;
+  color: white;
+  /* padding: 16px 24px; */
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  font-weight: bold;
+  height: 35px;
+  border-radius: 7px;
+}
+
+.quiz__video__card {
+  width: 90%;
+  display: flex;
+  flex-direction: column;
+}
+
+.quiz__star__button__card {
+  width: 100%;
+  /* background-color: blue; */
+  margin-top: 20px;
+}
+
+.quiz__star__button__card > button {
+  background-color: #ff6f00;
+  border-radius: 10px;
+  width: 170px;
+  height: 35px;
+  border: none;
+  color: #fff;
+  font-size: 18px;
+}
+.restart__or__back_Video_card {
+  display: flex;
+  /* background-color: #fff; */
+  justify-content: space-around;
+  align-items: center;
+  width: 100%;
+}
+
+.restart__or__back_Video_card > :nth-child(2) {
+  background-color: transparent;
+  border: 2px solid red;
+  width: 120px;
+  height: 35px;
+  color: #fff;
+  border-radius: 7px;
+}

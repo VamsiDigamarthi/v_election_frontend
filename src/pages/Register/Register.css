@@ -1,0 +1,124 @@
+.registor__main__card {
+  min-height: 100vh;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.registor__card {
+  width: 40%;
+  /* background-color: red; */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  box-shadow: #ff6f003b 0px 4px 12px;
+}
+
+.registor__card > form {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  gap: 0.8rem;
+}
+.registor__card > form > div {
+  display: flex;
+  width: 100%;
+  gap: 1rem;
+}
+.registor__card > form > div > input {
+  height: 35px;
+  width: 47%;
+  padding: 0px 10px;
+  outline: none;
+  background-color: transparent;
+  border: 1px solid gray;
+  color: #fff;
+}
+.registor__card > form > input {
+  height: 33px;
+  padding: 0px 10px;
+  outline: none;
+  background-color: transparent;
+  border: 1px solid gray;
+  color: #fff;
+}
+.registor__card > form > textarea {
+  padding: 5px 10px;
+  outline: none;
+  background-color: transparent;
+  border: 1px solid gray;
+  color: #fff;
+}
+
+::-webkit-file-upload-button {
+  /* color: #fff; */
+  background-color: #fff;
+  padding: 10px;
+  border: none;
+  /* border-radius: 10px; */
+  outline: none;
+  width: 82%;
+  margin: 0px;
+  /* background-color: #ff6f00; */
+}
+.registor__card > form > button {
+  height: 35px;
+  background-color: #ff6f00;
+  border: none;
+  outline: none;
+  font-size: 18px;
+  color: #fff;
+}
+
+.registor__card > form > section {
+  width: 100%;
+}
+
+.registor__card > form > section > img {
+  width: 50%;
+}
+
+.phone-number-reg {
+  width: 100%;
+  height: 35px;
+  background-color: transparent;
+}
+
+@media (max-width: 768px) {
+  .registor__card {
+    width: 90%;
+  }
+}
+
+@media (max-width: 768px) {
+  .phone__number__card__new {
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+.new__phone {
+  background-color: transparent;
+}
+
+.register__state__card {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.register__state__card > select {
+  width: 50%;
+  height: 35px;
+  background-color: transparent;
+  color: #fff;
+  outline: none;
+}
+
+.register__state__card > select option {
+  background: rgba(0, 0, 0, 0.3);
+  color: #fff;
+  /* text-shadow: 0 1px 0 rgba(0, 0, 0, 0.4); */
+}

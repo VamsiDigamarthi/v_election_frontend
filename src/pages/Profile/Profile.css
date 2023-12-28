@@ -1,0 +1,138 @@
+.profile__main {
+  position: relative;
+}
+
+.profile__main__card {
+  display: flex;
+  flex-direction: row;
+  gap: 1rem;
+  padding: 20px;
+}
+
+.profile__left__card {
+  flex: 1;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  gap: 1rem;
+  box-shadow: #ff6f003b 0px 4px 12px;
+  height: 540px;
+}
+
+.profile__name__edit__button__card {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.profile__name__edit__button__card > button {
+  width: 140px;
+  height: 35px;
+  background-color: coral;
+  border: none;
+  outline: none;
+  border-radius: 7px;
+  color: #fff;
+  font-size: 18px;
+}
+
+.profile__left__card > :nth-child(2) {
+  font-size: 26px;
+  font-weight: bold;
+}
+.profile__left__card > :nth-child(3) {
+  color: rgb(211, 212, 212);
+}
+
+.profile__left__card > :nth-child(4) {
+  font-size: 15px;
+  font-weight: bold;
+  text-align: start;
+}
+
+.listed__card {
+  list-style-type: none;
+  display: flex;
+  justify-content: flex-start;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.listed__card > li > span {
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.profile__left__card > p {
+  font-size: 18px;
+  margin: 3px;
+  text-align: center;
+}
+.profile__left__card > p > span {
+  font-size: 22px;
+  font-weight: bold;
+}
+
+/* right side */
+.profile__right__card {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+}
+.profile__right__card > img {
+  width: 80%;
+  height: 300px;
+}
+
+@media (max-width: 768px) {
+  .profile__main__card {
+    display: flex;
+    flex-direction: column;
+  }
+  .profile__voter__adhar__number {
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+  }
+  .profile__phonepe__number__card > p > span {
+    font-size: 18px;
+  }
+}
+
+.edit_modal_card {
+  position: absolute;
+  top: 10%;
+  left: 29%;
+  /* height: 320px; */
+  width: 550px;
+
+  border-radius: 7px;
+  padding: 20px;
+  background-image: radial-gradient(#ffbe0b, #f42b03);
+  display: flex;
+  flex-direction: column;
+  gap: 0.4rem;
+}
+
+.edit_modal_card > :nth-child(1) {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+  margin-bottom: 10px;
+}
+/* background-color: #ff6f00; */
+
+@media (max-width: 768px) {
+  .edit_modal_card {
+    top: 10%;
+    left: 2%;
+    width: 85%;
+  }
+}

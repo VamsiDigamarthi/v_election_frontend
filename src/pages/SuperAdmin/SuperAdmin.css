@@ -1,0 +1,239 @@
+.super_admin {
+  position: relative;
+}
+
+.super_admin__main {
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.table__main__card {
+  width: 100%;
+  /* border: 1px solid #ff6f00; */
+  border: 1px solid #a5a0a0;
+  height: 365px;
+  border-radius: 6px;
+  /* padding: 10px; */
+  overflow: hidden;
+}
+
+.table__header__card {
+  display: flex;
+  justify-content: space-between;
+  /* justify-content: flex-start; */
+  align-items: center;
+  height: 30px;
+  /* background-color: #1c1d1f; */
+  background-color: rgba(131, 131, 131, 0.507);
+  padding: 10px;
+}
+.table__header__card > span {
+  width: 16.5%;
+  /* background-color: red; */
+  font-size: 1.3vw;
+  font-weight: bold;
+  text-align: start;
+  padding-left: 10px;
+}
+
+.table__header__last__span {
+  width: 7% !important;
+  /* background-color: red; */
+}
+
+.table__body__card {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  /* height: 30px; */
+  /* background-color: #1c1d1f; */
+
+  padding: 10px;
+}
+
+.table__body__card > div {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 30px;
+  padding: 10px;
+  /* border-bottom: 1px solid #fff; */
+}
+/* .table__body__card > div > :nth-child(5) {
+  width: 20%;
+} */
+
+.table__body__card > div > span {
+  width: 16.5%;
+  overflow: scroll;
+  font-size: 1.2vw;
+  font-weight: 500;
+  text-align: start;
+  padding-left: 10px;
+}
+.table__body__card > :nth-child(even) {
+  background-color: #1c1d1f;
+}
+
+.table__filter__ui {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  /* border: 2px solid red; */
+}
+
+.table__filter__ui > :nth-child(2) {
+  height: 38px;
+  width: 50%;
+  border: 1px solid #ff6f00;
+  border-radius: 7px;
+  display: flex;
+  overflow: hidden;
+}
+
+.filter__sort__main__card {
+  width: 35%;
+  /* border: 2px solid red; */
+  height: 33px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.filter__sort__main__card > select {
+  width: 40%;
+  height: 100%;
+  border-radius: 7px;
+  background-color: transparent;
+  color: #ff6f00;
+  outline: none;
+  /* border: 1px solid #ff6f00; */
+}
+
+@media (max-width: 768px) {
+  .table__filter__ui {
+    flex-direction: column;
+    gap: 1rem;
+  }
+  .table__filter__ui > :nth-child(2) {
+    width: 100%;
+  }
+  .filter__sort__main__card {
+    width: 100%;
+    gap: 1rem;
+  }
+  .filter__sort__main__card > button {
+    font-size: 12px !important;
+  }
+  .filter__sort__main__card > select {
+    width: 100%;
+  }
+  .filter__sort__main__card > select > option {
+    width: 80%;
+  }
+}
+
+.table__filter__ui > div > input {
+  width: 75%;
+  height: 100%;
+  background-color: transparent;
+  border: none;
+  outline: none;
+  padding: 0px 10px;
+  color: #fff;
+  font-size: 18px;
+}
+
+.table__filter__ui > div > button {
+  width: 35%;
+  height: 100%;
+  outline: none;
+  border: none;
+  background-color: #ff6f00;
+  color: #fff;
+  font-size: 20px;
+}
+
+.filter__sort__main__card > :nth-child(3) {
+  background-color: #ff6f00;
+  padding: 7px;
+  border-radius: 7px;
+}
+
+.add__task__to__user__card {
+  position: absolute;
+  top: 35%;
+  left: 30%;
+  background-color: #1c1d1f;
+  padding: 20px;
+  width: 40%;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+.add__task__to__user__card > :nth-child(1) {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.add__task__to__user__card > form {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.add__task__to__user__card > form > input {
+  height: 35px;
+  background-color: transparent;
+  border: 1.3px solid gray;
+  padding: 3px 10px;
+  color: #ffff;
+  font-size: 18px;
+}
+
+.add__task__to__user__card > form > button {
+  height: 35px;
+  border: none;
+  outline: none;
+  background-color: #ff6f00;
+  color: #fff;
+  font-size: 18px;
+}
+
+@media (max-width: 768px) {
+  .add__task__to__user__card {
+    width: 80%;
+    top: 25%;
+    left: 5%;
+  }
+}
+
+.details__task__to__user__card {
+  position: absolute;
+  top: 10%;
+  left: 5%;
+  background-color: #1c1d1f;
+  padding: 20px;
+  width: 90%;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.details__task__to__user__card > :nth-child(1) {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+@media (max-width: 768px) {
+  .details__task__to__user__card {
+    width: 80%;
+  }
+}

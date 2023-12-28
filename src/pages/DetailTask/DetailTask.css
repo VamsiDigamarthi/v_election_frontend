@@ -1,0 +1,39 @@
+.details__main__card {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  max-height: 70vh;
+  overflow: scroll;
+}
+
+.details__inner__loop {
+  display: flex;
+  gap: 2rem;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  /* background-color: red; */
+  padding: 10px;
+  border: 2px solid #fff;
+  border-radius: 10px;
+  padding: 5px;
+  /* box-shadow: #ff6f003b 0px 4px 12px; */
+}
+
+.details__inner__loop > span {
+  font-size: 20px;
+  font-weight: bold;
+}
+
+@media (max-width: 768px) {
+  .details__inner__loop {
+    display: flex;
+    flex-direction: column;
+    gap: 0.2rem;
+    padding: 10px;
+    align-items: flex-start;
+  }
+  .details__inner__loop > :nth-child(1) {
+    text-align: start;
+  }
+}

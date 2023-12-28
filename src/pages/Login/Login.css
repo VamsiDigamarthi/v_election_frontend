@@ -1,0 +1,54 @@
+.login__main__card {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  width: 105%;
+  background-color: #50c878;
+  background-color: #0cab41;
+}
+
+.login__card {
+  width: 24%;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  justify-content: center;
+  align-items: center;
+  /* background-color: red; */
+}
+.login__card > :nth-child(1) {
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.login__card > span {
+  font-size: 18px;
+}
+
+.phone-number {
+  width: 100%;
+}
+
+.phone-icon-div {
+  width: 30px;
+  height: 30px;
+  padding: 10px;
+  background-color: #fff;
+  border-radius: 50px;
+}
+
+.login__card > button {
+  width: 50%;
+  height: 35px;
+  color: #fff;
+  background-color: transparent;
+  border: 2px solid #fff;
+  border-radius: 7px;
+}
+
+@media (max-width: 768px) {
+  .login__card {
+    width: 80%;
+  }
+}
